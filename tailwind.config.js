@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'newake': ['Newake Demo', 'sans-serif'],
+        'metana': ['Neue Metana', 'sans-serif']
+      },
       colors: {
         gray: {
           900: '#202225',

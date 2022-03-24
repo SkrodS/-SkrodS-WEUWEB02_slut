@@ -1,6 +1,5 @@
 <script>
 import { gsap } from "gsap";
-import { ExpoScaleEase, RoughEase, SlowMo } from "gsap/EasePack";
 
 export default {
     mounted() {
@@ -15,8 +14,8 @@ export default {
 
         gsap.ticker.add(()=>{
             if (mouse.moved){
-                parallaxIt('.slide', -600);
-                parallaxIt('img', -200);
+                parallaxIt('.slide', -100);
+                parallaxIt('img', -50);
             }
             mouse.moved = false;
         });
@@ -36,9 +35,8 @@ export default {
 </script>
 
 <template>
-    <div ref="container" id="container" class="relative h-screen w-full border-black flex justify-center content-center overflow-hidden">
-        <img src="https://unsplash.it/1000/1000?random=" class="absolute top-0 left-0 h-full w-full object-cover scale-125"/>
-        <div class="slide block absolute h-52 w-52 bg-red-600 mt-60"></div>  
+    <div ref="container" id="container" class="relative h-screen w-full flex justify-center content-center overflow-hidden bg-gray-600">
+        <h1 class="text-7xl slide text-center font-metana font-regular tracking-tight text-black top-16">Robin Widjeback</h1>
     </div>
 </template>
 

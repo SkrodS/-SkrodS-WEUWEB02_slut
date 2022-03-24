@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Newake Demo';
+    src: url('NewakeDemo.woff2') format('woff2'),
+        url('NewakeDemo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Metana';
+    src: url('NeueMetana-Regular.woff2') format('woff2'),
+        url('NeueMetana-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Metana';
+    src: url('NeueMetana-Bold.woff2') format('woff2'),
+        url('NeueMetana-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
