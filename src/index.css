@@ -7,12 +7,15 @@
     .navbar-icon {
         @apply relative flex items-center justify-center
                h-16 w-16 mt-2 mb-2 mx-auto shadow-lg text-3xl
-               bg-gray-800 text-orange-400 rounded-[100%];
+               dark:bg-gray-800 text-orange-400 rounded-[100%] bg-slate-200;
 
     }
 
-    html {
-        @apply bg-white cursor-none overflow-hidden
+    * {
+        @apply cursor-none
+    }
+    .color-anim {
+        @apply transition-colors duration-200 ease-linear
     }
 
     @font-face {

@@ -6,6 +6,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -23,8 +24,13 @@ module.exports = {
           200: '#ebedef',
           100: '#f2f3f5',
         },
+        purple: {
+          900: '#CF72FB',
+        }
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow'),
+  ],
 }
