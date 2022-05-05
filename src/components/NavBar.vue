@@ -33,7 +33,7 @@ export default {
   <div class="fixed top-0 left-0 h-screen w-20
               flex flex-col
               text-white shadow-lg color-anim dark:bg-gray-900 bg-slate-100">
-    <a href="/"><i class="navbar-icon color-anim"><i class="fa-solid fa-compass"></i></i></a>
+    <a href="#page1"><i class="navbar-icon color-anim"><i class="fa-solid fa-compass"></i></i></a>
     <a href="#page2"><i class="navbar-icon color-anim"><i class="fa-solid fa-code"></i></i></a>
     <a href="#page3"><i class="navbar-icon color-anim"><i class="fa-solid fa-earth-europe"></i></i></a>
     <a href="#page4"><i class="navbar-icon color-anim"><i class="fa-solid fa-address-card"></i></i></a>
