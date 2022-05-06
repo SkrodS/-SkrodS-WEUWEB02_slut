@@ -17,7 +17,6 @@ export default {
       options: {
         menu: '#menu',
         loopBottom: true,
-        parallax: true,
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
       }
     }
@@ -46,6 +45,8 @@ export default {
       </div>
       <div class="section">
         <Scene2/>
+        <!-- <div class="slide" data-anchor="slide1">Two 1</div>
+        <div class="slide" data-anchor="slide2">Two 2</div> -->
       </div>
     </full-page>
     <NavBar/>

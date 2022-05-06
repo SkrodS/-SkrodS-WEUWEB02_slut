@@ -4,6 +4,10 @@
 
 @layer components {
 
+    html {
+        @apply scroll-smooth
+    }
+
     .navbar-icon {
         @apply relative flex items-center justify-center
                h-16 w-16 mt-2 mb-2 mx-auto shadow-lg text-3xl

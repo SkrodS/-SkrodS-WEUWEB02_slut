@@ -18,7 +18,7 @@ export default {
         gsap.ticker.add(()=>{
             if (mouse.moved){
                 parallaxIt('.slide2', -200);
-                parallaxIt('img', -50);
+                parallaxIt('.img', -50);
             }
             mouse.moved = false;
         });
