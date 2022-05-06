@@ -38,8 +38,8 @@ export default {
         gsap.to('.star', {duration: 5, rotation: "360deg", transformOrigin: "50% 50%", repeat: -1, ease: "linear.easeNone"});
         gsap.to('.star', {duration: 2, attr: {points: newShape}, repeat: -1, yoyo: true, ease: "elastic.easeInOut"});
 
-        var tl = gsap.timeline({delay: 4, onReverseComplete: true});
-        tl.from('.img', {duration: 2, x: innerWidth, ease: 'power3.out'})
+        var tl = gsap.timeline({delay: 3, onReverseComplete: true});
+        tl.from('.img', {duration: 1, x: innerWidth, ease: 'power3.out'})
         tl.from('.slide', {scale: .2, opacity: 0, duration: 1, ease: 'power2.out'})
         tl.from('.slide2', {scale: .2, opacity: 0, duration: 1, ease: 'power2.out'})
         tl.from('.scroll', {delay: 3, scale: .2, opacity: 0, duration: 1, ease: 'power2.out'})
@@ -53,12 +53,12 @@ export default {
         <div class="absolute w-full h-full pattern-isometric dark:pattern-gray-900 pattern-gray-400 pattern-size-32"></div>
         <img src="../assets/image.jpg" class="img grayscale scale-200 absolute left-[50%] scale-125 space-y-reverse scale-x-[-1] dark:invert-0 invert ease-in-out">
         <div class="star-container absolute top-28 left-36 slide2 color-anim">
-            <VueWriter :array="['robin Wi', 'Robin Widjeback']" :start="5300" :delay="1500" :typeSpeed="100" :iterations="1" :eraseSpeed="80" class="absolute left-36 text-7xl slide font-metana font-bold tracking-tighter text-orange-400 text-shadow-sm grow opacity-90" /><br><br>
+            <VueWriter :array="['robin Wi', 'Robin Widjeback']" :start="5300" :delay="1500" :typeSpeed="100" :iterations="1" :eraseSpeed="50" class="absolute left-36 text-7xl slide font-metana font-bold tracking-tighter text-orange-400 text-shadow-sm grow opacity-90" /><br><br>
             <svg viewBox="0 0 200 200" width="100" height="100">
             <polygon class="star" fill="#202225b5" points="100,50 130.9,4.9 129.4,59.5 180.9,41.2 147.6,84.5 200,100 147.6,115.5 180.9,158.8 129.4,140.5 
                 130.9,195.1 100,150 69.1,195.1 70.6,140.5 19.1,158.8 52.4,115.5 0,100 52.4,84.5 19.1,41.2 70.6,59.5 69.1,4.9 "/>
             </svg>
-            <p class="text-2xl font-bold font-metana text-black dark:text-slate-300 -tracking-tighter text-shadow color-anim">Web developer and programmer</p>
+            <p class="text-2xl font-bold font-metana text-black dark:text-slate-300 -tracking-tighter text-shadow color-anim">web developer and programmer</p>
         </div>
         <h1 class="scroll text-2xl z-50 text-center font-metana tracking-widest absolute bottom-0 dark:text-white text-black">Scroll<br><i class="fa-solid fa-arrow-down"></i></h1>
     </div>

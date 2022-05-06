@@ -45,6 +45,7 @@ export default {
         <Scene1/>
       </div>
       <div class="section">
+        <Scene2/>
       </div>
     </full-page>
     <NavBar/>
