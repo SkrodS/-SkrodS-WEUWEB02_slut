@@ -3,6 +3,11 @@ import { gsap } from "gsap";
 
 
 export default {
+    data() {
+        return {
+            timelineBool: false,
+        }
+    },
     mounted() {
         var rect = this.$refs['container'].getBoundingClientRect();
         var mouse = {x: 0, y: 0, moved: false};
@@ -38,12 +43,19 @@ export default {
         gsap.to('.star', {duration: 5, rotation: "360deg", transformOrigin: "50% 50%", repeat: -1, ease: "linear.easeNone"});
         gsap.to('.star', {duration: 2, attr: {points: newShape}, repeat: -1, yoyo: true, ease: "elastic.easeInOut"});
 
-        var tl = gsap.timeline({delay: 3, onReverseComplete: true});
-        tl.from('.img', {duration: 1, x: innerWidth, ease: 'power3.out'})
-        tl.from('.slide', {scale: .2, opacity: 0, duration: 1, ease: 'power2.out'})
-        tl.from('.slide2', {scale: .2, opacity: 0, duration: 1, ease: 'power2.out'})
-        tl.from('.scroll', {delay: 3, scale: .2, opacity: 0, duration: 1, ease: 'power2.out'})
+    },
 
+    methods: {
+        timeline() {
+            if (!this.timelineBool) {
+                this.timelineBool = true;
+                var tl = gsap.timeline({delay: 3, onReverseComplete: true});
+                tl.from('.img', {duration: 1, x: innerWidth, ease: 'power3.out'})
+                tl.from('.slide', {scale: .2, opacity: 0, duration: 1, ease: 'power2.out'})
+                tl.from('.slide2', {scale: .2, opacity: 0, duration: 1, ease: 'power2.out'})
+                tl.from('.scroll', {delay: 3, scale: .2, opacity: 0, duration: 1, ease: 'power2.out'})
+            }
+        },
     }
 }
 </script>

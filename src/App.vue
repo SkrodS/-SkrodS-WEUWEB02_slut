@@ -16,6 +16,7 @@ export default {
     return {
       options: {
         menu: '#menu',
+        afterLoad: this.afterLoad,
         loopBottom: true,
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
       }
@@ -30,6 +31,19 @@ export default {
         tl.to('#wave', {duration: .8, attr: { d: shape3 }, ease: 'power2.out'})
         tl.to('#content', {duration: 1, visibility: "visible", ease: 'power2'})
         tl.to('#wave', {duration: 3, opacity: 0, ease: 'power2.out'})
+  },
+  methods: {
+	  afterLoad: function(origin){
+      console.log(origin.index, origin)
+      // if (index['index'] == 0 && index['isFirst']) {
+      //   this.$refs.scene1.timeline()
+      // }
+
+      // if (index['index'] == 0 && index['isLast']) {
+      //   console.log(index['index'])
+      //   this.$refs.scene2.timeline()
+      // }
+    }
   }
 }
 </script>
@@ -39,12 +53,12 @@ export default {
         <path id="wave" d="M469.539032,263.986786H-0.000001L0,263.557617c66.11113,0.429169,351.088104,0.429169,469.539032,0.208344V263.986786z"/>
   </svg>
   <div id="content" class="invisible">
-    <full-page :options="options" if=fullpage>
+    <full-page :options="options" if=fullpage @after-load='afterLoad'>
       <div class="section">
-        <Scene1/>
+        <Scene1 ref="scene1"/>
       </div>
       <div class="section">
-        <Scene2/>
+        <Scene2 ref="scene2"/>
         <!-- <div class="slide" data-anchor="slide1">Two 1</div>
         <div class="slide" data-anchor="slide2">Two 2</div> -->
       </div>

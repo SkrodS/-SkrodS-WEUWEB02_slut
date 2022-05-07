@@ -2,14 +2,29 @@
 import { gsap } from "gsap";
 
 export default {
-    mounted() {
-        var tl2 = gsap.timeline({onReverseComplete: true});
-        tl2.from('#card1', {delay: 3, scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
-        tl2.from('#card2', {scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
-        tl2.from('#card3', {scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
-        tl2.from('#card4', {scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
-        tl2.from('#scroll-text', {scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
+  data() {
+    return {
+      timelineBool: false
+    }
+  },
+
+  mounted() {
     },
+
+  methods: {
+    timeline() {
+      if (!this.timelineBool) {
+        this.timelineBool = true;
+        var tl = gsap.timeline({onReverseComplete: true});
+        tl.from('#card1', {delay: 3, scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
+        tl.from('#card2', {scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
+        tl.from('#card3', {scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
+        tl.from('#card4', {scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
+        tl.from('#scroll-text', {scale: .2, opacity: 0, duration: .4, ease: 'power2.inOut'})
+  
+      }
+    }
+  },
 }
 </script>
 
