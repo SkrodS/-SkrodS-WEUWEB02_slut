@@ -34,6 +34,30 @@ export default {
       }
       console.log(localStorage.theme);
     },
+    page1() {
+      this.$refs["1"].style.color = "#2247AF"
+      this.$refs["2"].style.color = "#fb923c"
+      this.$refs["3"].style.color = "#fb923c"
+      this.$refs["4"].style.color = "#fb923c"
+    },
+    page2() {
+      this.$refs["1"].style.color = "#fb923c"
+      this.$refs["2"].style.color = "#2247AF"
+      this.$refs["3"].style.color = "#fb923c"
+      this.$refs["4"].style.color = "#fb923c"
+    },
+    page3() {
+      this.$refs["1"].style.color = "#fb923c"
+      this.$refs["2"].style.color = "#fb923c"
+      this.$refs["3"].style.color = "#2247AF"
+      this.$refs["4"].style.color = "#fb923c"
+    },
+    page4() {
+      this.$refs["1"].style.color = "#fb923c"
+      this.$refs["2"].style.color = "#fb923c"
+      this.$refs["3"].style.color = "#fb923c"
+      this.$refs["4"].style.color = "#2247AF"
+    },
   },
 };
 </script>
@@ -43,17 +67,20 @@ export default {
     class="fixed top-0 left-0 h-screen w-20 flex flex-col text-white shadow-lg color-anim dark:bg-gray-900 bg-slate-100"
   >
     <a href="#page1"
-      ><i class="navbar-icon color-anim"><i class="fa-solid fa-compass"></i></i
+      ><i class="navbar-icon color-anim" ref="1"
+        ><i class="fa-solid fa-compass"></i></i
     ></a>
     <a href="#page2"
-      ><i class="navbar-icon color-anim"><i class="fa-solid fa-code"></i></i
+      ><i class="navbar-icon color-anim" ref="2"
+        ><i class="fa-solid fa-code"></i></i
     ></a>
     <a href="#page3"
-      ><i class="navbar-icon color-anim"
+      ><i class="navbar-icon color-anim" ref="3"
         ><i class="fa-solid fa-earth-europe"></i></i
     ></a>
     <a href="#page4"
-      ><i class="navbar-icon color-anim"><i class="fa-solid fa-envelope"></i></i
+      ><i class="navbar-icon color-anim" ref="4"
+        ><i class="fa-solid fa-envelope"></i></i
     ></a>
 
     <i

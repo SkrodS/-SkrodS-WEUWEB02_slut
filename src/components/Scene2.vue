@@ -64,7 +64,7 @@ export default {
       :typeSpeed="100"
       :iterations="1"
       :eraseSpeed="50"
-      class="absolute mx-auto z-10 mt-16 text-6xl font-metana font-bold tracking-tighter text-orange-400 text-shadow-sm opacity-90"
+      class="absolute mx-auto mt-16 text-6xl font-metana font-bold tracking-tighter text-orange-400 text-shadow-sm opacity-90 z-50"
     />
     <p
       id="scroll-text"
@@ -74,16 +74,16 @@ export default {
     </p>
     <div class="flex items-center justify-center">
       <div
-        class="w-full pattern-wavy pattern-gray-900 pattern-bg-white pattern-size-32 pattern-opacity-5 absolute color-anim"
+        class="w-full h-full pattern-wavy pattern-gray-900 pattern-bg-white pattern-size-32 pattern-opacity-5 absolute color-anim"
       ></div>
 
       <div
-        class="flex flex-no-wrap overflow-x-scroll scrolling-touch items-start mt-12 ml-[5rem] no-scrollbar"
+        class="flex flex-no-wrap overflow-x-scroll items-start mt-12 ml-[5rem] no-scrollbar"
       >
         <!-- CARD -->
         <div
           id="card1"
-          class="ml-8 flex-none w-1/3 md:w-1/3 mr-8 md:pb-4 relative max-w-xl overflow-hidden bg-clip-padding backdrop-filter backdrop-blur-xl z-50 bg-opacity-60 border border-gray-200 rounded-xl color-anim"
+          class="ml-8 flex-none md:w-1/3 mr-8 md:pb-4 relative max-w-xl overflow-hidden bg-clip-padding backdrop-filter backdrop-blur-xl z-40 bg-opacity-60 border border-gray-200 rounded-xl color-anim"
         >
           <a
             href="src/assets/Screenshot from 2022-05-06 11-20-10.png"
@@ -103,13 +103,13 @@ export default {
                 Bizard: The Bunny-loving Wizard
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-400 color-anim">
+            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
               Bizard is a rouge-like shooter game I made for a programming class
               in my second year of Upper secondary school. You play as the
               charachter Bizard who's main goal is to turn living tree trunks
               into cute rabbits.
             </p>
-            <p class="mb-3 font-normal text-gray-400 color-anim">
+            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
               The game was created in python using pygame. Check out the code
               below!
             </p>
@@ -130,7 +130,7 @@ export default {
         <!-- CARD -->
         <div
           id="card2"
-          class="flex-none w-1/3 md:w-1/3 mr-8 md:pb-4 relative max-w-xl overflow-hidden bg-clip-padding backdrop-filter backdrop-blur-xl z-50 bg-opacity-60 border border-gray-200 rounded-xl color-anim"
+          class="flex-none w-1/3 md:w-1/3 mr-8 md:pb-4 relative max-w-xl overflow-hidden bg-clip-padding backdrop-filter backdrop-blur-xl z-40 bg-opacity-60 border border-gray-200 rounded-xl color-anim"
         >
           <a href="src/assets/smartmockups_klawjpjg.jpg" target="_blank">
             <img
@@ -147,12 +147,12 @@ export default {
                 Share:y
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-400 color-anim">
+            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
               This is a project I worked on for school. It's social media
               platform called Share:y with fully functional back-end +
               front-end, made by me.
             </p>
-            <p class="mb-3 font-normal text-gray-400 color-anim">
+            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
               The back-end enables the users to create accounts, make posts,
               visit other peoples profiles.
             </p>
@@ -173,7 +173,7 @@ export default {
         <!-- CARD -->
         <div
           id="card3"
-          class="flex-none w-1/3 md:w-1/3 mr-8 md:pb-4 relative max-w-xl overflow-hidden bg-clip-padding backdrop-filter backdrop-blur-xl z-50 bg-opacity-60 border border-gray-200 rounded-xl color-anim"
+          class="flex-none w-1/3 md:w-1/3 mr-8 md:pb-4 relative max-w-xl overflow-hidden bg-clip-padding backdrop-filter backdrop-blur-xl z-40 bg-opacity-60 border border-gray-200 rounded-xl color-anim"
         >
           <a href="src\assets\Skärmbild 2022-05-06 200821.png" target="_blank">
             <img
@@ -190,11 +190,11 @@ export default {
                 REV
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-400 color-anim">
+            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
               {REV} is another social media platform I made for school. This one
               does however only feature a front end made by me.
             </p>
-            <p class="mb-3 font-normal text-gray-400 color-anim">
+            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
               This project was a normal message board type social media platform
               with an integrated news feed. The news were served using RSS.
             </p>
@@ -215,7 +215,7 @@ export default {
         <!-- CARD -->
         <div
           id="card4"
-          class="flex-none w-1/3 md:w-1/3 mr-8 md:pb-4 relative max-w-xl overflow-hidden bg-clip-padding backdrop-filter backdrop-blur-xl z-50 bg-opacity-60 border border-gray-200 rounded-xl color-anim"
+          class="flex-none w-1/3 md:w-1/3 mr-8 md:pb-4 relative max-w-xl overflow-hidden bg-clip-padding backdrop-filter backdrop-blur-xl z-40 bg-opacity-60 border border-gray-200 rounded-xl color-anim"
         >
           <a
             href="src/assets/Screenshot from 2022-05-06 11-39-51.png"
@@ -235,11 +235,11 @@ export default {
                 EC Store
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-400 color-anim">
+            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
               For this project I created a whole webshop including back-end and
               front-end.
             </p>
-            <p class="mb-3 font-normal text-gray-400 color-anim">
+            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
               The website works as you'd imagine, you can put items in your
               shopping cart, create orders and it even has an admin page where
               everything can be managed by an owner.

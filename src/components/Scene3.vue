@@ -92,14 +92,12 @@ export default {
     }
 
     function R(min, max) {
-      console.log("random körs");
       return min + Math.random() * (max - min);
     }
   },
   methods: {
     timeline() {
       if (!this.timelineBool) {
-        console.log("hej");
         this.timelineBool = true;
         var tl = gsap.timeline({ onReverseComplete: true });
         tl.to("#container3", {
@@ -133,7 +131,7 @@ export default {
     <img
       src="src/assets/Tokyo Store.jpeg"
       alt=""
-      class="opacity-80 absolute w-full m-auto dark:grayscale dark:invert-0 grayscale-0 inset-y-1/2 scale-x-150"
+      class="opacity-80 absolute w-full m-auto dark:grayscale dark:invert-0 grayscale-0 inset-y-full scale-x-150 scale-y-150"
       id="img3"
     />
     <VueWriter

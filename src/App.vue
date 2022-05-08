@@ -40,15 +40,19 @@ export default {
     afterLoad: function (origin, destination, direction) {
       if (destination["anchor"] == "page1") {
         this.$refs.scene1.timeline();
+        this.$refs.nav.page1();
       }
       if (destination["anchor"] == "page2") {
         this.$refs.scene2.timeline();
+        this.$refs.nav.page2();
       }
       if (destination["anchor"] == "page3") {
         this.$refs.scene3.timeline();
+        this.$refs.nav.page3();
       }
       if (destination["anchor"] == "page4") {
         this.$refs.scene4.timeline();
+        this.$refs.nav.page4();
       }
     },
   },
@@ -66,7 +70,7 @@ export default {
       d="M469.539032,263.986786H-0.000001L0,263.557617c66.11113,0.429169,351.088104,0.429169,469.539032,0.208344V263.986786z"
     />
   </svg>
-  <div id="content" class="invisible">
+  <div id="content" class="invisible hidden lg:block">
     <full-page :options="options" if="fullpage">
       <div class="section">
         <Scene1 ref="scene1" />
@@ -81,9 +85,19 @@ export default {
         <Scene4 ref="scene4" />
       </div>
     </full-page>
-    <NavBar />
+    <NavBar ref="nav" />
+    <MouseIcon />
   </div>
-  <MouseIcon />
+
+  <div
+    class="absloute lg:hidden bg-slate-200 w-screen h-screen text-center pt-36"
+  >
+    <h1
+      class="z-10 text-2xl font-metana font-bold tracking-tighter text-orange-400 text-shadow-sm opacity-90"
+    >
+      This website can only be used on wide screens.
+    </h1>
+  </div>
 </template>
 
 <style></style>
