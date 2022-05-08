@@ -3,49 +3,53 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    @apply scroll-smooth;
+  }
 
-    html {
-        @apply scroll-smooth
-    }
-
-    .navbar-icon {
-        @apply relative flex items-center justify-center
+  .navbar-icon {
+    @apply relative flex items-center justify-center
                h-16 w-16 mt-2 mb-2 mx-auto shadow-lg text-3xl
                dark:bg-gray-800 text-orange-400 rounded-[100%] bg-slate-200;
+  }
 
-    }
+  * {
+    @apply cursor-none;
+  }
+  .color-anim {
+    @apply transition-colors duration-200 ease-linear;
+  }
 
-    * {
-        @apply cursor-none
-    }
-    .color-anim {
-        @apply transition-colors duration-200 ease-linear
-    }
+  @font-face {
+    font-family: "Newake Demo";
+    src: url("./fonts/transfonter.org-20220323-122302/NewakeDemo.woff2")
+        format("woff2"),
+      url("./fonts/transfonter.org-20220323-122302/NewakeDemo.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 
-    @font-face {
-        font-family: 'Newake Demo';
-        src: url('./fonts/transfonter.org-20220323-122302/NewakeDemo.woff2') format('woff2'),
-            url('./fonts/transfonter.org-20220323-122302/NewakeDemo.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Neue Metana';
-        src: url('./fonts/transfonter.org-20220323-122302/NeueMetana-Regular.woff2') format('woff2'),
-            url('./fonts/transfonter.org-20220323-122302/NeueMetana-Regular.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-    }
-    
-    @font-face {
-        font-family: 'Neue Metana';
-        src: url('./fonts/transfonter.org-20220323-122302/NeueMetana-Bold.woff2') format('woff2'),
-            url('./fonts/transfonter.org-20220323-122302/NeueMetana-Bold.woff') format('woff');
-        font-weight: bold;
-        font-style: normal;
-        font-display: swap;
-    }
+  @font-face {
+    font-family: "Neue Metana";
+    src: url("./fonts/transfonter.org-20220323-122302/NeueMetana-Regular.woff2")
+        format("woff2"),
+      url("./fonts/transfonter.org-20220323-122302/NeueMetana-Regular.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Neue Metana";
+    src: url("./fonts/transfonter.org-20220323-122302/NeueMetana-Bold.woff2")
+        format("woff2"),
+      url("./fonts/transfonter.org-20220323-122302/NeueMetana-Bold.woff")
+        format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
 }

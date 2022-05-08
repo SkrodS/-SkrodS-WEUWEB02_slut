@@ -103,13 +103,17 @@ export default {
                 Bizard: The Bunny-loving Wizard
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
+            <p
+              class="mb-3 font-normal text-gray-400 color-anim hidden xl:block"
+            >
               Bizard is a rouge-like shooter game I made for a programming class
               in my second year of Upper secondary school. You play as the
               charachter Bizard who's main goal is to turn living tree trunks
               into cute rabbits.
             </p>
-            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
+            <p
+              class="mb-3 font-normal text-gray-400 color-anim hidden xl:block"
+            >
               The game was created in python using pygame. Check out the code
               below!
             </p>
@@ -147,12 +151,16 @@ export default {
                 Share:y
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
+            <p
+              class="mb-3 font-normal text-gray-400 color-anim hidden xl:block"
+            >
               This is a project I worked on for school. It's social media
               platform called Share:y with fully functional back-end +
               front-end, made by me.
             </p>
-            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
+            <p
+              class="mb-3 font-normal text-gray-400 color-anim hidden xl:block"
+            >
               The back-end enables the users to create accounts, make posts,
               visit other peoples profiles.
             </p>
@@ -190,11 +198,15 @@ export default {
                 REV
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
+            <p
+              class="mb-3 font-normal text-gray-400 color-anim hidden xl:block"
+            >
               {REV} is another social media platform I made for school. This one
               does however only feature a front end made by me.
             </p>
-            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
+            <p
+              class="mb-3 font-normal text-gray-400 color-anim hidden xl:block"
+            >
               This project was a normal message board type social media platform
               with an integrated news feed. The news were served using RSS.
             </p>
@@ -235,11 +247,15 @@ export default {
                 EC Store
               </h5>
             </a>
-            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
+            <p
+              class="mb-3 font-normal text-gray-400 color-anim hidden xl:block"
+            >
               For this project I created a whole webshop including back-end and
               front-end.
             </p>
-            <p class="mb-3 font-normal text-gray-400 color-anim hidden xl:block">
+            <p
+              class="mb-3 font-normal text-gray-400 color-anim hidden xl:block"
+            >
               The website works as you'd imagine, you can put items in your
               shopping cart, create orders and it even has an admin page where
               everything can be managed by an owner.

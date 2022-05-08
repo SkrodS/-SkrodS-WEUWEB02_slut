@@ -35,28 +35,28 @@ export default {
       console.log(localStorage.theme);
     },
     page1() {
-      this.$refs["1"].style.color = "#2247AF"
-      this.$refs["2"].style.color = "#fb923c"
-      this.$refs["3"].style.color = "#fb923c"
-      this.$refs["4"].style.color = "#fb923c"
+      this.$refs["1"].style.color = "#2247AF";
+      this.$refs["2"].style.color = "#fb923c";
+      this.$refs["3"].style.color = "#fb923c";
+      this.$refs["4"].style.color = "#fb923c";
     },
     page2() {
-      this.$refs["1"].style.color = "#fb923c"
-      this.$refs["2"].style.color = "#2247AF"
-      this.$refs["3"].style.color = "#fb923c"
-      this.$refs["4"].style.color = "#fb923c"
+      this.$refs["1"].style.color = "#fb923c";
+      this.$refs["2"].style.color = "#2247AF";
+      this.$refs["3"].style.color = "#fb923c";
+      this.$refs["4"].style.color = "#fb923c";
     },
     page3() {
-      this.$refs["1"].style.color = "#fb923c"
-      this.$refs["2"].style.color = "#fb923c"
-      this.$refs["3"].style.color = "#2247AF"
-      this.$refs["4"].style.color = "#fb923c"
+      this.$refs["1"].style.color = "#fb923c";
+      this.$refs["2"].style.color = "#fb923c";
+      this.$refs["3"].style.color = "#2247AF";
+      this.$refs["4"].style.color = "#fb923c";
     },
     page4() {
-      this.$refs["1"].style.color = "#fb923c"
-      this.$refs["2"].style.color = "#fb923c"
-      this.$refs["3"].style.color = "#fb923c"
-      this.$refs["4"].style.color = "#2247AF"
+      this.$refs["1"].style.color = "#fb923c";
+      this.$refs["2"].style.color = "#fb923c";
+      this.$refs["3"].style.color = "#fb923c";
+      this.$refs["4"].style.color = "#2247AF";
     },
   },
 };

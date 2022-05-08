@@ -99,7 +99,7 @@ export default {
     ></div>
     <img
       src="../assets/image.jpg"
-      class="img scale-200 absolute left-[50%] scale-125 space-y-reverse scale-x-[-1] dark:grayscale  ease-in-out"
+      class="img scale-200 absolute left-[50%] scale-125 space-y-reverse scale-x-[-1] dark:grayscale ease-in-out"
     />
     <div class="star-container absolute top-28 left-36 slide2 color-anim">
       <VueWriter

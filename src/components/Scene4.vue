@@ -14,7 +14,7 @@ export default {
         var tl = gsap.timeline({ onReverseComplete: true });
         tl.to("#container4", { duration: 1, opacity: 1, ease: "power2.inOut" });
         tl.from("form", {
-          stagger: .1,
+          stagger: 0.1,
           scale: 0.2,
           opacity: 0,
           duration: 2,
@@ -106,7 +106,7 @@ export default {
             id="message"
           ></textarea>
           <p class="text-gray-500 text-xs italic dark:text-gray-500 color-anim">
-            Write year message above.
+            Write your message above.
           </p>
         </div>
       </div>
