@@ -8,7 +8,7 @@ import Scene4 from "./components/Scene4.vue";
 import FullPage from "./components/Fullpage.vue";
 import { gsap } from "gsap";
 
-document.documentElement.classList.add("dark");
+document.documentElement.classList.add("light");
 </script>
 
 <script>
