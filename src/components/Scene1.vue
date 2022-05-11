@@ -8,6 +8,7 @@ export default {
     };
   },
   mounted() {
+    //Parallax effect
     var rect = this.$refs["container"].getBoundingClientRect();
     var mouse = { x: 0, y: 0, moved: false };
 
@@ -38,6 +39,7 @@ export default {
       var rect = this.$refs("container").getBoundingClientRect();
     });
 
+    //Star animation
     var newShape =
       "100,0 115.5,52.4 158.8,19.1 140.5,70.6 195.1,69.1 150,100 195.1,130.9 140.5,129.4 158.8,180.9 115.5,147.6 100,200 84.5,147.6 41.2,180.9 59.5,129.4 4.9,130.9 50,100 4.9,69.1 59.5,70.6 41.2,19.1 84.5,52.4 ";
     gsap.to(".star", {
@@ -57,6 +59,7 @@ export default {
   },
 
   methods: {
+    //Triggers the following animations when afterLoad is called for this page.
     timeline() {
       if (!this.timelineBool) {
         this.timelineBool = true;

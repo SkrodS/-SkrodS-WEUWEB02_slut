@@ -6,6 +6,7 @@ gsap.registerPlugin(ExpoScaleEase, RoughEase, SlowMo);
 
 export default {
   mounted() {
+    //Hover animation with GSAP-ease
     const navbarIcon = document.querySelectorAll(".navbar-icon");
     navbarIcon.forEach((i) => {
       let hover = gsap.to(i, {
@@ -19,6 +20,7 @@ export default {
     });
   },
   methods: {
+    //Toggles dark mode
     toggleDark() {
       localStorage.theme = localStorage.theme === "dark" ? "light" : "dark";
 
@@ -34,6 +36,8 @@ export default {
       }
       console.log(localStorage.theme);
     },
+
+    //Color changes triggered by afterLoad in app.vue
     page1() {
       this.$refs["1"].style.color = "#2247AF";
       this.$refs["2"].style.color = "#fb923c";

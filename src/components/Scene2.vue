@@ -11,6 +11,7 @@ export default {
   mounted() {},
 
   methods: {
+    //Triggers the following animations when afterLoad is called for this page.
     timeline() {
       if (!this.timelineBool) {
         this.timelineBool = true;

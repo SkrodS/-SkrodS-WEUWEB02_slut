@@ -3,6 +3,7 @@ import { gsap } from "gsap";
 
 export default {
   mounted() {
+    //Handles the animation of the mouseIcon-
     function moveCircle(e) {
       gsap.to(".circle", { duration: 0, left: e.pageX, top: e.pageY });
       gsap.to(".circle2", {
